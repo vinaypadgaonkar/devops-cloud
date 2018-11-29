@@ -25,4 +25,13 @@ while True:
     elif userChoice is 2:
         car.displayFareDetails()
     elif userChoice is 3:
+		print("Enter the type of car:")
+        carType = input()
+        print("Enter the total number of days for the rent")
+        timePeriod = int(input())
+        rent = car.calculateFare(carType,timePeriod)
+        print(f"Rental Details for your requested Car {carType} for {timePeriod} days is ${rent}")
+        #print("Your rental details for the car ",carType, "taken for ",timePeriod,"is: $",rent)
+    elif userChoice is 4:
+        quit()							   
         quit()
